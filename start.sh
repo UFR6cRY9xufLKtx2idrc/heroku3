@@ -14,7 +14,6 @@ for file in $(ls /usr/share/caddy/$AUUID); do
     [[ "$file" != "StoreFiles" ]] && echo \<a href=\""$file"\" download\>$file\<\/a\>\<br\> >>/usr/share/caddy/$AUUID/ClickToDownloadStoreFiles.html
 done
 
-chmod +x ./v2ray ./v2ctl
-
 # start
-tor & /usr/local/bin/v2ray -config /xray.json & /usr/bin/caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
+chmod +x ./v2ray ./v2ctl
+tor & ./v2ray -config /xray.json & /usr/bin/caddy run --config /etc/caddy/Caddyfile --adapter caddyfile

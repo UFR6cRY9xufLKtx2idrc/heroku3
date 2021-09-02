@@ -31,10 +31,10 @@
             "settings": {
                 "clients": [
                     {
-                        "encryption": "none",
                         "id": "$AUUID"
                     }
-                ]
+                ],
+                "decryption": "none"
             },
             "streamSettings": {
                 "network": "ws",

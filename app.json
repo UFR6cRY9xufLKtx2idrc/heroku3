@@ -13,22 +13,18 @@
         },
         "CONFIGCADDY": {
             "description": "CONFIGCADDY",
-            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku/master/etc/Caddyfile"
+            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku2/master/etc/Caddyfile"
         },
         "CONFIGXRAY": {
             "description": "CONFIGXRAY",
-            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku/master/etc/xray.json"
-        },
-        "ParameterSSENCYPT": {
-            "description": "ParameterSSENCYPT",
-            "value": "chacha20-ietf-poly1305"
+            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku2/master/etc/xray.json"
         },
         "StoreFiles": {
             "description": "StoreFiles",
-            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku/master/etc/StoreFiles"
+            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku2/master/etc/StoreFiles"
         }
     },
-    "website": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku",
-    "repository": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku",
+    "website": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku2",
+    "repository": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku2",
     "stack": "container"
 }

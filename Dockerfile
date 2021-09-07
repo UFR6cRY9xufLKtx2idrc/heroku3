@@ -20,10 +20,10 @@ FROM caddy:builder-alpine
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
 RUN apk update && \
-    apk add --no-cache --virtual ca-certificates caddy tor wget && \
+    apk add --no-cache --virtual ca-certificates caddy wget && \
     mkdir /v2ray && \
     wget -qO- https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip | busybox unzip - && \
-    mkdir -p /usr/share/caddy/$AUUID && wget -O /usr/share/caddy/$AUUID/StoreFiles https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku/master/etc/StoreFiles && \
+    mkdir -p /usr/share/caddy/$AUUID && wget -O /usr/share/caddy/$AUUID/StoreFiles https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku2/master/etc/StoreFiles && \
     wget -P /usr/share/caddy/$AUUID -i /usr/share/caddy/$AUUID/StoreFiles && \
     chmod +x /v2ray && \
     rm -rf /var/cache/apk/*

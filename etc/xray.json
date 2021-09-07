@@ -46,58 +46,6 @@
             }
         },
         {
-            "listen": "/etc/caddy/trojan",
-            "protocol": "trojan",
-            "settings": {
-                "clients": [
-                    {
-                        "password": "$AUUID"
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "ws",
-                "wsSettings": {
-                    "path": "/$AUUID-trojan"
-                }
-            }
-        },
-        {
-            "listen": "127.0.0.1",
-            "port": 4234,
-            "protocol": "dokodemo-door",
-            "settings": {
-                "address": "v1.mux.cool",
-                "followRedirect": false,
-                "network": "tcp"
-            },
-            "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/$AUUID-ss"
-                }
-            },
-            "tag": "onetag"
-        },
-        {
-            "listen": "127.0.0.1",
-            "port": 4324,
-            "protocol": "shadowsocks",
-            "settings": {
-                "method": "$ParameterSSENCYPT",
-                "password": "$AUUID"
-            },
-            "streamSettings": {
-                "dsSettings": {
-                    "abstract": true,
-                    "path": "apath"
-                },
-                "network": "domainsocket",
-                "security": "none"
-            }
-        },
-        {
             "listen": "127.0.0.1",
             "port": 5234,
             "protocol": "socks",
@@ -134,49 +82,12 @@
             "settings": {
             },
             "tag": "blocked"
-        },
-        {
-            "protocol": "socks",
-            "settings": {
-                "servers": [
-                    {
-                        "address": "127.0.0.1",
-                        "port": 9050
-                    }
-                ]
-            },
-            "tag": "sockstor"
-        },
-        {
-            "protocol": "freedom",
-            "streamSettings": {
-                "dsSettings": {
-                    "abstract": true,
-                    "path": "apath"
-                },
-                "network": "domainsocket"
-            },
-            "tag": "twotag"
         }
     ],
     "routing": {
         "domainMatcher": "mph",
         "domainStrategy": "IPIfNonMatch",
         "rules": [
-            {
-                "inboundTag": [
-                    "onetag"
-                ],
-                "outboundTag": "twotag",
-                "type": "field"
-            },
-            {
-                "domain": [
-                    "geosite:tor"
-                ],
-                "outboundTag": "sockstor",
-                "type": "field"
-            },
             {
                 "domain": [
                     "geosite:category-ads-all",

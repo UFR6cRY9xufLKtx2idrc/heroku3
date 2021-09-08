@@ -19,8 +19,6 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "earlyDataHeaderName": "Sec-WebSocket-Protocol",
-                    "maxEarlyData": 4096,
                     "path": "/$AUUID-vmess"
                 }
             }
@@ -39,8 +37,6 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "earlyDataHeaderName": "Sec-WebSocket-Protocol",
-                    "maxEarlyData": 4096,
                     "path": "/$AUUID-vless"
                 }
             }
@@ -85,7 +81,6 @@
         }
     ],
     "routing": {
-        "domainMatcher": "mph",
         "domainStrategy": "IPIfNonMatch",
         "rules": [
             {

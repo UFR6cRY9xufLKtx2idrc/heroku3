@@ -13,18 +13,18 @@
         },
         "CONFIGCADDY": {
             "description": "CONFIGCADDY",
-            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku2/master/etc/Caddyfile"
+            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku3/master/etc/Caddyfile"
         },
         "CONFIGXRAY": {
             "description": "CONFIGXRAY",
-            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku2/master/etc/xray.json"
+            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku3/master/etc/xray.json"
         },
         "StoreFiles": {
             "description": "StoreFiles",
-            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku2/master/etc/StoreFiles"
+            "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku3/master/etc/StoreFiles"
         }
     },
-    "website": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku2",
-    "repository": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku2",
+    "website": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku3",
+    "repository": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku3",
     "stack": "container"
 }

@@ -19,7 +19,8 @@ RUN xcaddy build \
 FROM caddy:builder-alpine
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
-RUN apk update && \
+RUN set -ex && \
+    apk update && \
     apk add --no-cache --virtual ca-certificates caddy wget && \
     mkdir /xray && \
     wget -qO- https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip | busybox unzip - && \

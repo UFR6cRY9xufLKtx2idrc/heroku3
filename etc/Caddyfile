@@ -16,6 +16,7 @@ header {
     X-Permitted-Cross-Domain-Policies "none"
     -Server
     -Hidden
+    -Via
 }
 
 basicauth /$AUUID/* {

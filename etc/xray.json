@@ -40,26 +40,6 @@
                     "path": "/$AUUID-vless"
                 }
             }
-        },
-        {
-            "listen": "127.0.0.1",
-            "port": 5234,
-            "protocol": "socks",
-            "settings": {
-                "accounts": [
-                    {
-                        "pass": "$AUUID",
-                        "user": "$AUUID"
-                    }
-                ],
-                "auth": "password"
-            },
-            "streamSettings": {
-                "network": "ws",
-                "wsSettings": {
-                    "path": "/$AUUID-socks"
-                }
-            }
         }
     ],
     "log": {

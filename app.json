@@ -24,7 +24,6 @@
             "value": "https://raw.githubusercontent.com/UFR6cRY9xufLKtx2idrc/heroku3/master/etc/StoreFiles"
         }
     },
-    "website": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku3",
-    "repository": "https://github.com/UFR6cRY9xufLKtx2idrc/heroku3",
+    "repository": "",
     "stack": "container"
 }

@@ -21,6 +21,13 @@
                 "wsSettings": {
                     "path": "/$AUUID-vmess"
                 }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
             }
         },
         {
@@ -39,6 +46,13 @@
                 "wsSettings": {
                     "path": "/$AUUID-vless"
                 }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
             }
         }
     ],
